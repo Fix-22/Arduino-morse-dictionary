@@ -5,21 +5,6 @@
 const int led8 = 8; //point
 const int led2 = 2; //line
 const int led13 = 13; //working
-int buzzer = 9;
-int pulsante = 7;
-int pulsantestato = LOW;
-
-int melodia[] = {
-  NOTE_C3, NOTE_F3, NOTE_C3, NOTE_D2, NOTE_C3
-};
-
-int durataNote[] = {
-  4, 8, 5, 5, 3
-};
-
-int numeroNote = 5;
-
-
 
 char tastiera = 0;
 
@@ -30,11 +15,6 @@ void setup() {
   pinMode(led13, OUTPUT);
   pinMode(buzzer, OUTPUT);
   Serial.begin(9600);
-  for(int i = 0; i < numeroNote; i++){
-    int durata = 1500 / durataNote[i];
-    tone(buzzer, melodia[i], durata);
-    delay(durata * 1.3);
-  }
   digitalWrite(led13, HIGH);
 }
 

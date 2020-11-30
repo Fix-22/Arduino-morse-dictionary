@@ -2,9 +2,9 @@
 
 #include "pitches.h"
 
-const int led8 = 8; //punto
-const int led2 = 2; //linea
-const int led13 = 13; //in funzione
+const int led8 = 8; //point
+const int led2 = 2; //line
+const int led13 = 13; //working
 int buzzer = 9;
 int pulsante = 7;
 int pulsantestato = LOW;
@@ -44,7 +44,7 @@ void loop() {
 
   
   
-  //LETTERE
+  //LETTERS
 
   case 'a':
   digitalWrite(led13, LOW);
@@ -505,7 +505,7 @@ void loop() {
 
   
 
-  //NUMERI
+  //NUMBERS
   
   case '1':
   digitalWrite(led13, LOW);

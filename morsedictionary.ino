@@ -6,7 +6,7 @@ const int led8 = 8; //point
 const int led2 = 2; //line
 const int led13 = 13; //working
 
-char tastiera = 0;
+char keyboard = 0;
 
 
 void setup() {
@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   tastiera = Serial.read();
-  switch(tastiera){
+  switch(keyboard){
 
   
   

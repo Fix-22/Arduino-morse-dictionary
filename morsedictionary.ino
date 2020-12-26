@@ -1,7 +1,5 @@
 //MORSE DICTIONARY
 
-#include "pitches.h"
-
 const int led8 = 8; //point
 const int led2 = 2; //line
 const int led13 = 13; //working
